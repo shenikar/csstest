@@ -1,0 +1,22 @@
+/* "Americano" поменять цвет на красный */
+.menu-item[data-name="Americano"] {
+    color: red;
+}
+
+/* В таблице "Tea Menu" добавить колонку "Manufacturer" */
+#tea-menu th:nth-child(3),
+#tea-menu td:nth-child(3) {
+    display: table-cell;
+}
+
+/* В разделе "Special Items" у изображений сделать круглые края */
+#special-items img {
+    border-radius: 50%;
+}
+
+/* Для мобильных устройств (маленький экран) не показывать раздел "About our cafe" */
+@media (max-width: 600px) {
+    #about-section {
+        display: none;
+    }
+}
